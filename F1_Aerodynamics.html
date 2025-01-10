@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="F1_Aerodynamics.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">BNBI</a>
+        </div>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <!-- <a href="contact.html">Contact</a> -->
+        </div>
+    </nav>
+    <div class="welcome"></div>
+    <div class="main">
+        <div class="centered">
+            <p>
+                <h1>The physics behind Formula 1</h1>
+            </p>
+        </div>          
+        <p>
+            In the spirit of the F1 season heating up, let's talk a bit about the physics and engineering behind the sport. Keep in mind that everything in this post is a simplified version of what actually goes on, the engineering is far from as simple as is described in here.
+        </p>
+        <div class="images">
+            <img src="F1_season.png" alt="Recent race winners Lando Norris and Charles Leclerc">
+        </div>
+        <p>
+            We’ll talk mostly about the aerodynamics of the car. Aerodynamics is key to a car’s performance, and it is one of the most basic but necessary elements considered when making a car. We’ve all heard of the term streamlined before, and a car being able to glide through air with minimum turbulence is key to reaching high speeds. However, outside of this, there are many other uses for air, with downforce being the other key result of aerodynamics. In order to make the sharp corners on the track at high speeds, cars need large amounts of friction. Friction is the normal force acting on the car multiplied by the coefficient of friction, and since you cannot change the coefficient of friction without changing the tire, the only thing that can be increased is the normal force. Normal force is a reaction force, and it acts to balance out all forces pushing down on an object. In the case of a car in motion, it equals the weight of the car plus the downforce on the car, neglecting other factors like lift. Ideally, to keep the acceleration the same, the weight of the car is held constant. So, the only way to increase performance around corners is to perfect the downforce.
+        </p>
+        <div class="images">
+            <img src="Downforce_FBD.jpg" alt="Free body diagram" width="500px" height="auto">
+        </div>
+        <p>
+            Starting from the front of the car, the most obvious feature is the front wing. It is the first part of the car to make contact with oncoming air, and so it is responsible for distributing airflow to the rest of the car. The front wing has several components, including the wing flaps and the end plates. Each component contributes to the overall aerodynamics of the car.
+        </p>
+        <div class="images">
+            <img src="Front_wing.jpg" alt="Front wing of the 2022 Red Bull" width="500px" height="auto">
+        </div>
+        <p>
+            The actual wing flaps use airflow to produce downforce, and to understand how that works, we need to understand pressure and Bernoulli's principle.
+        </p>
+        <div class="images">
+            <img src="Bernoulli_principle.png" alt="Bernoulli's Principle" width="500px" height="auto">
+        </div>
+        <p>
+            Look at the equation above. Bernoulli’s principle is an analog to the conservation of energy. Notice that, assuming the potential energy of the fluid is constant, increasing the speed of the fluid decreases the pressure. Now, if you take a look at the front wing, you will notice that the flaps curve upwards. As a result, air moving above the wing is slightly obstructed, slowing it down. On the other hand, air moving below the wing has less obstruction, and so it is faster. In this context, the potential increase is essentially negligible compared to the other values. So, because air on top flows slower, it has higher pressure. Air on the bottom flows faster, so it has lower pressure. High pressure above the wing and low pressure below the wing results in a downwards force on the car, and this is the basic idea behind downforce. So, to recap, these front wing flaps manipulate the flow of air to create different pressures above and below the car, causing downforce.
+        </p>
+        <div class="images">
+            <img src="Aerodynamics_Wing.png" alt="Cross section of wing" width="500px" height="auto">
+        </div>
+        <p>
+            Another way to think about these wings is to imagine them as upside-down airplane wings. Similar to how downforce works, lift is a force that pushes upwards. If you want to learn about planes, there’s a lot of cool stuff there, but the lift also comes from a pressure difference, except this time in the opposite direction.
+        </p>
+        <div class="images">
+            <img src="Airplane.png" alt="Airplane wing aerodynamics" width="500px" height="auto">
+        </div>
+        <p>
+            Now let's look at the other components of the front wing. You might notice the two obtrusive-looking blocks on either side of the wing. These are called the end plates. Although they may appear unassuming and less important than the wings, these actually do a lot for the car. For one, they ensure stability of the car by reducing turbulence. The end plates act as a barrier between the top and the bottom of the wings. Without the end plates, the high pressure air spills over the side with the low pressure air, creating many different unwanted vortices. This is not ideal for the car, as it increases turbulence. To fix this, end plates separate these two regions, ensuring a more streamlined airflow. Another function of the endplate is to divert airflow away from the tires and towards the sidepods and later the rear of the car. If you have ever run against the wind, you know what drag force is. Air hitting the tires of the car would increase drag, which is the force that resists motion. Obviously, we don’t want anything to reduce the motion of the car, and so we want to divert this air. 
+        </p>
+        <div class="images">
+            <img src="Endplates.png" alt="Endplate aerodynamics" width="500px" height="auto">
+        </div>
+        <p>
+            Moving past the front wing, we reach the sidepods of the car. Here, we see yet another possible application of air. As you can probably imagine, an F1 car gets unimaginably hot, and it needs to be cooled. Air flows into the car and through several radiators, cooling oil, water, and coolant needed to reduce the temperatures of systems like the engine and the gearbox. This is a concept we have slightly touched on before in a previous post. Another application of the air, as we have discussed in the previous post, is to spool the turbo. F1 cars make use of turbochargers, and so air needs to be compressed and fed into the engine. Now, depending on the car, this cooling of air can be caused by air passing through another radiator, or it could also be cooled by liquids.
+        </p>
+        <p>
+            You can actually see the same principle of cooling happen in the paddock. If you’ve ever seen the mechanics use a leaf blower on the car, they are creating an artificial airflow. They place dry ice near the intake of the leaf blower to reduce the temperature of the resulting air, cooling down the car before the race.
+        </p>
+        <div class="images">
+            <img src="Leafblower_cooling.jpg" alt="Fernando Alonso's car cooling down" width="500px" height="auto">
+        </div>
+        <p>
+            As we progress along the car, we have to mention the floor. Most of the downforce is generated here. Again, as we mentioned before, downforce is caused through a pressure difference. The relatively flat floor allows the air to flow quickly and smoothly underneath the car, which, through Bernoulli’s principle, has low pressure and causes downforce. In fact, this low pressure/suction is so strong that in the 2023 Las Vegas grand prix, Formula 1 driver Carlos Sainz drove over a manhole cover, sucking it straight out of its hole, damaging the car. Keep in mind that a manhole cover is around 150 pounds. As a result of this oversight, the FIA went around the track, re-securing every single manhole cover.
+        </p>
+        <div class="images">
+            <img src="Ground_effect.jpg" alt="Massive downforce from car" width="500px" height="auto">
+        </div>
+        <p>
+            Now, as air moves around the sidepod, which also adds to the downforce as an added bonus, we finally make our way over to the rear. This is where even more downforce is generated, and where we can find the rear wing and the diffuser, among other things. 
+        </p>
+        <p>
+            The rear wing itself functions similarly to the front wing. It creates a high pressure zone above and a low pressure zone below, creating downforce. However, a key difference between the rear vs the front wing is that the rear wing is adjustable by the driver. Before we get to that, it is important to realize that while a wing is great for downforce, it sacrifices grip for speed. In other words, the entire point of downforce is to allow for greater speed around corners, but it is counter-productive on the straights. Air hitting a wing is no longer streamlined, and so drag is created. Therefore, drivers have the option to use the Drag Reduction System, or DRS. This is only used in certain situations, but DRS just opens up the rear wing, allowing air to flow through it instead of over it, and decreasing both drag and downforce. As a side note, this will change in 2026, as F1 is implementing a new active aero system, allowing both the front and rear wings to be adjustable and reduce drag.
+        </p>
+        <div class="images">
+            <img src="Rear_wing.jpg" alt="DRS vs no DRS" width="500px" height="auto">
+        </div>
+        <p>
+            Also at the rear of the car is the diffuser. The diffuser works with the rear wing to create downforce by ensuring that the air coming from the floor integrates properly with atmospheric air. The diffuser, in oversimplified terms, is just part of the floor that slopes upwards at the end. This increases the area that air under the floor has to fill in, which decreases the speed. As a result, low pressure air is able to slowly come back to (almost) atmospheric pressure, reducing drag and increasing reliability. It also helps other drivers by leaving behind relatively clean air.
+        </p>
+        <div class="images">
+            <img src="Diffuser.png" alt="Airflow through diffuser" width="500px" height="auto">
+        </div>
+        <p>
+            Again, this entire post is a severely oversimplified explanation of the entire aerodynamic system of an F1 car. I tried not to include any equations for sake of simplicity, but if Bernoulli’s principle gave you a taste for a more technical explanation of aerodynamics, I highly recommend the book Race Car Aerodynamics by Joseph Katz. It's a short but technical read, and it covers motorsports in general, not just F1.
+        </p>
+    </div>
+    <div class="bottom">
+
+    </div>
+</body>
+</html>

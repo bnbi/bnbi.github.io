@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Stock_Market.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">BNBI</a>
+        </div>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <!-- <a href="contact.html">Contact</a> -->
+        </div>
+    </nav>
+    <div class="welcome"></div>
+    <div class="main">
+        <div class="centered">
+            <p>
+                <h1>The Stock Market (Part 1)</h1>
+            </p>
+        </div>          
+        <p>
+            Recently, I read a really interesting book about the physics of the stock market. It was titled The Physics of Wall Street by James Owen Weatherall, and I’ll try my best to summarize some of it here. The book is somewhat long, so I will be doing the first half here. The second half is more technical, and I might summarize that as well in the future. Also note that I have no background in anything related to economics, so hopefully my summary will be accurate and somewhat understandable.
+        </p>
+        <p>
+            The story starts with a man called Louis Bachelier in the early 20th century, who is largely credited to be the father of mathematical finance. While Einstein is credited with mathematically describing Brownian motion, a martingale explaining the random movements of particles, Bachelier actually mathematically described random walks 5 years earlier to describe the random movements of stock prices. Essentially, Bachelier assumed that the chances a stock price goes up is the same as the chances it goes down. He was able to prove that after some time, the expected price of a stock follows a normal distribution. This follows, but the assumption that stock prices move randomly is not as easy to understand. When looking at stock prices, a trade must be made, meaning both the buyer and the seller agree to a given price. As no one wants to be disadvantaged, it stands to reason that both the buyer and the seller would like to make out with a profit. The only way to do that is if they both choose a price that has a 50% chance of going up and a 50% chance of going down. In other words, a random walk. This is a very idealized way to look at the stock market, and it doesn’t account for speculative bubbles.
+        </p>
+        <div class="images">
+            <img src="Normal-Distribution.png" alt="Normal distribution with std deviation" width="500px" height="auto">
+        </div>
+        <p>
+            We move on to the astrophysicist Maury Osborne. Osborne did not agree with Bachelier’s idea of modeling stock prices as a normal model. After observing his own data, he found that stock prices did not actually follow a normal model. Instead, they followed a logarithmic normal model. In other words, the rate of return followed a normal model, with the key word here being the rate. To explain this, one just has to think about how we as humans view money. If you had 100 dollars, and gained 10 dollars, you most likely will be less excited than if you only started with 10 dollars, and gained an extra 10 dollars. Osborne argued that we look at stock prices not by their literal values but by their percentage change. Osborne’s model also accounts for the fact that investors cannot lose more money than they put in. This model is an attempt to combine psychology and sociology with mathematical and statistical models. Later, Osbourne also put a hole into the Brownian motion theory, as he discovered that prices that go up are more likely to go down the next time, and vice versa. However, prices that go up or down twice are more likely to keep going up or down, respectively.
+        </p>
+        <div class="images">
+            <img src="Log-normal.png" alt="Log normal distribution" width="500px" height="auto">
+        </div>
+        <p>
+            Our journey continues on to Benoit Mandelbrot, best known for his Mandelbrot set. Mandelbrot dismissed both Bachelier and Osborne, by claiming that the market was too chaotic, too “wildly random” for a normal model. Instead, he proposed using a Cauchy model. It was only when he mistook a graph of cotton prices for a wealth distribution model, a Cauchy model, that he decided to investigate further. Calling back Paul Levy’s work, Mandelbrot realized that markets followed Levy-stable distributions. Levy-stable distributions is a general mold for random models. It is characterized by an alpha value, with the normal model having an alpha value of 2, and a Cauchy model having an alpha value of 1. The lower the value, the more “wild” the randomness. Mandelbrot realized that both Bachelier and Osborne were wrong in that they had assumed the model had to be a normal one.
+        </p>
+        <div class="images">
+            <img src="Levy-stable.png" alt="Levy-stable distribution" width="500px" height="auto">
+        </div>
+        <p>
+            We then take a detour to visit Edward Thorpe, founder of Princeton Newport Partners, casino cheater, and the first person to apply information theory to the stock market. Thorpe began his adventures in the casino by developing a strategy for winning blackjack, using card counting and basic strategy. Card counting fundamentally is simply an application of information theory. It allows you to keep track of information, giving you an advantage in calculating your next move. Similarly, in roulette, the starting position of the ball is information, which gives you an advantage. Thorpe found that he could predict which octant the ball falls into, giving him a massive upper hand. Keeping the theme of gambling, Thorpe tried his hand at the stock market. Specifically, he began to explore warrants, a type of stock option. Thorpe found a relationship between stock prices and warrant prices, giving him information that could help him in the warrant market. Using this, he found that making a profit with buying warrants was almost impossible in the long run. In fact, buying warrants mirrors betting at a casino. Buying is betting that the price will go up, while selling is betting that the price will go down. So, the best way to play is to be the house. In other words, Thorpe found that the best way to win was to practice short selling. Essentially, you would take a loan of stocks from someone, sell them all, and gamble on the price decreasing. If it does, you can rebuy the stocks and sell them back, giving you a profit. However, one fault of this strategy is that if the stock goes up, then you stand to lose a lot of money. To counteract this, Thorpe also bought shares of the corresponding stock as insurance, decreasing the loss. This strategy is now called delta hedging, and Thorpe used it to make about 20% per year.
+        </p>
+        <p>
+            The rest of the book deals with the Black-Scholes model, chaos theory, and Sornette’s market crash hypothesis, which I will cover in a later post. I would still highly recommend reading the book yourself, because there is a lot of stuff I have not mentioned, and James Owen Weatherall tells stories better than I do. As a disclaimer, none of the stuff in this post or in the book are meant to be financial advice, it is just a deep dive into the interesting theory behind the market.
+        </p>
+    </div>
+    <div class="bottom">
+
+    </div>
+</body>
+</html>
